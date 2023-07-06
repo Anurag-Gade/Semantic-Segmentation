@@ -9,4 +9,6 @@ The segmentation networks implemented in this repository include:
 
 3 . [**UNet**](https://github.com/Anurag-Gade/brain-labelling-MIT/tree/main/segmentation_networks/unet)
 
+*More models are being added*
+
 [VGG16 weights (for the VGG16 SegNet)](https://github.com/fchollet/deep-learning-models/releases/download/v0.1/vgg16_weights_tf_dim_ordering_tf_kernels_notop.h5)
