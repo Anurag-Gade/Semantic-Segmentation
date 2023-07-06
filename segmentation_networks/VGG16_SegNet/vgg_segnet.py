@@ -52,7 +52,9 @@ class SegmentationModel:
     output_layer = layers.Activation("softmax")(x)
 
     model = Model(input_layer, output_layer)
-
+    model.summary()
+    model.compile(loss="categorical_crossentropy", optimizer="adadelta", metrics=["accuracy"])
+    
     return model
   
   def segnet_fit(self):
