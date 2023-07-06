@@ -15,6 +15,12 @@ Place the train, validation and testing data into their respective folders in th
 
 ***For VGGSegNet***, change 16 to 19 in `main.py` if you want to use the VGG-19 model as the encoder instead of VGG-16. By default, VGG-16 is the encoder in our VGGSegNet.
 
+```
+function test() {
+  console.log("notice the blank line before this function?");
+}
+```
+
 Some issues need to be addressed, in particular training the model with an IoU metric. If the accuracy metric is replaced with the IoU metric, the training does not go on, and the code runs into an error. Hence, a custom IoU function will be added as well. 
 
 [VGG16 weights (for the VGG16 SegNet)](https://github.com/fchollet/deep-learning-models/releases/download/v0.1/vgg16_weights_tf_dim_ordering_tf_kernels_notop.h5)
