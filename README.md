@@ -16,9 +16,21 @@ Place the train, validation and testing data into their respective folders in th
 ***For VGGSegNet***, change 16 to 19 in `main.py` if you want to use the VGG-19 model as the encoder instead of VGG-16. By default, VGG-16 is the encoder in our VGGSegNet.
 
 ```
-function test() {
-  console.log("notice the blank line before this function?");
-}
+$ ./tree-md .
+# Project tree
+
+.
+ * [tree-md](./tree-md)
+ * [dir2](./dir2)
+   * [file21.ext](./dir2/file21.ext)
+   * [file22.ext](./dir2/file22.ext)
+   * [file23.ext](./dir2/file23.ext)
+ * [dir1](./dir1)
+   * [file11.ext](./dir1/file11.ext)
+   * [file12.ext](./dir1/file12.ext)
+ * [file_in_root.ext](./file_in_root.ext)
+ * [README.md](./README.md)
+ * [dir3](./dir3)
 ```
 
 Some issues need to be addressed, in particular training the model with an IoU metric. If the accuracy metric is replaced with the IoU metric, the training does not go on, and the code runs into an error. Hence, a custom IoU function will be added as well. 
