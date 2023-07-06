@@ -1,5 +1,4 @@
-# brain-labelling-MIT
-Segmentation + Labelling project 
+# Semantic Segmentation Pipeline
 
 The segmentation networks implemented in this repository include:
 
