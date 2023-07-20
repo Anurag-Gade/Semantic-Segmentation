@@ -8,4 +8,4 @@ X_train, y_train, X_val, y_val, X_test, y_test = dataloader()
 
 segmod = SegmentationModel(input_dims, num_classes, '../weights/')
 
-segmod.segnet_fit()
+segmod.segnet_fit(X_train, y_train, X_val, y_val)
